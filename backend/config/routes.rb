@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :team_with_player_serializers
   resources :divisions
   resources :players
   resources :teams
