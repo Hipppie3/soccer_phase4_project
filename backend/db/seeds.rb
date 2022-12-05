@@ -6,17 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-puts "Creating division..."
-
-Division.create(name: "", player_id: p1.id , team_id: t1.id)
-Division.create(name: "", player_id: , team_id:)
-Division.create(name: "", player_id: , team_id:)
-Division.create(name: "", player_id: , team_id:)
-Division.create(name: "", player_id: , team_id:)
-Division.create(name: "", player_id: , team_id:)
-Division.create(name: "", player_id: , team_id:)
-Division.create(name: "", player_id: , team_id:)
-
 puts "Creating players..."
 
 p1 = Player.create(name: "Maz", Position: "Defender", image: "", goals: 70, age: 25, country: "Sudan")
@@ -56,7 +45,15 @@ t6 = Team.create(name: "Team", mascot: "", standing: 6)
 t7 = Team.create(name: "Team", mascot: "", standing: 7)
 t8 = Team.create(name: "Team", mascot: "", standing: 8)
 
-
+puts "Creating division..."
+Division.create(name: “”, player_id: p1.id, team_id: t1.id)
+Division.create(name: “”, player_id: p2.id, team_id: t2.id)
+Division.create(name: “”, player_id: p3.id, team_id: t3.id)
+Division.create(name: “”, player_id: p4.id, team_id: t4.id)
+Division.create(name: “”, player_id: p5.id, team_id: t5.id)
+Division.create(name: “”, player_id: p6.id, team_id: t6.id)
+Division.create(name: “”, player_id: p7.id, team_id: t7.id)
+Division.create(name: “”, player_id: p8.id, team_id: t8.id)
 
 
 
