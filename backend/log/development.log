@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
   [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
@@ -550,5 +551,1596 @@ Processing by UsersController#show as */*
 [active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
 Filter chain halted as :authorize rendered or redirected
 Completed 401 Unauthorized in 2ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 322)
+=======
+Started GET "/" for ::1 at 2022-12-05 14:07:22 -0700
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20221205182712_create_teams.rb
+20221205183042_create_players.rb
+20221205183243_create_divisions.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2022-12-05 14:07:22 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20221205182712_create_teams.rb
+20221205183042_create_players.rb
+20221205183243_create_divisions.rb
+
+
+):
+  
+activerecord (7.0.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTeams (20221205182712)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "teams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "mascot" varchar, "standing" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205182712"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePlayers (20221205183042)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "players" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" varchar, "position" varchar, "age" integer, "country" varchar, "goals" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205183042"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDivisions (20221205183243)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7fcbecbbcf"
+FOREIGN KEY ("player_id")
+  REFERENCES "players" ("id")
+, CONSTRAINT "fk_rails_ad80bce56b"
+FOREIGN KEY ("team_id")
+  REFERENCES "teams" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205183243"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-05 21:08:19.501321"], ["updated_at", "2022-12-05 21:08:19.501321"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maz"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Sudan"], ["goals", 70], ["created_at", "2022-12-05 21:10:02.301863"], ["updated_at", "2022-12-05 21:10:02.301863"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Branden"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "Vietnam"], ["goals", 69], ["created_at", "2022-12-05 21:10:02.304046"], ["updated_at", "2022-12-05 21:10:02.304046"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Daniel"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Mexico"], ["goals", 112], ["created_at", "2022-12-05 21:10:02.305457"], ["updated_at", "2022-12-05 21:10:02.305457"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alex"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "USA"], ["goals", 10], ["created_at", "2022-12-05 21:10:02.306854"], ["updated_at", "2022-12-05 21:10:02.306854"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sam"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-05 21:10:02.307965"], ["updated_at", "2022-12-05 21:10:02.307965"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stephen"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-05 21:10:02.309269"], ["updated_at", "2022-12-05 21:10:02.309269"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yesenia"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Mexico"], ["goals", 99], ["created_at", "2022-12-05 21:10:02.310517"], ["updated_at", "2022-12-05 21:10:02.310517"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paolo"], ["image", ""], ["position", "COMMENTATOR"], ["age", 23], ["country", "Venezuela"], ["goals", 0], ["created_at", "2022-12-05 21:10:02.311696"], ["updated_at", "2022-12-05 21:10:02.311696"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vera"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Russia"], ["goals", 14], ["created_at", "2022-12-05 21:10:02.312919"], ["updated_at", "2022-12-05 21:10:02.312919"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yana"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Russia"], ["goals", 17], ["created_at", "2022-12-05 21:10:02.314183"], ["updated_at", "2022-12-05 21:10:02.314183"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gavin"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 45], ["created_at", "2022-12-05 21:10:02.315424"], ["updated_at", "2022-12-05 21:10:02.315424"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oren"], ["image", ""], ["position", "BALLBOY"], ["age", 31], ["country", "NORTH KOREA"], ["goals", 0], ["created_at", "2022-12-05 21:10:02.316744"], ["updated_at", "2022-12-05 21:10:02.316744"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Andy"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "USA"], ["goals", 9], ["created_at", "2022-12-05 21:10:02.317947"], ["updated_at", "2022-12-05 21:10:02.317947"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chuck"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 80], ["created_at", "2022-12-05 21:10:02.319244"], ["updated_at", "2022-12-05 21:10:02.319244"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jason"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "USA"], ["goals", 81], ["created_at", "2022-12-05 21:10:02.320953"], ["updated_at", "2022-12-05 21:10:02.320953"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mason"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Cuba"], ["goals", 3], ["created_at", "2022-12-05 21:10:02.322588"], ["updated_at", "2022-12-05 21:10:02.322588"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dylan"], ["image", ""], ["position", "CHEERLEADER"], ["age", 69], ["country", "ANTARTICA"], ["goals", 0], ["created_at", "2022-12-05 21:10:02.323910"], ["updated_at", "2022-12-05 21:10:02.323910"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Claire"], ["image", ""], ["position", "THERAPIST"], ["age", 31], ["country", "Costa Rica"], ["goals", 11], ["created_at", "2022-12-05 21:10:02.325193"], ["updated_at", "2022-12-05 21:10:02.325193"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jon"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Croatia"], ["goals", 26], ["created_at", "2022-12-05 21:10:02.326636"], ["updated_at", "2022-12-05 21:10:02.326636"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaycee"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "India"], ["goals", 63], ["created_at", "2022-12-05 21:10:02.327927"], ["updated_at", "2022-12-05 21:10:02.327927"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rachel"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Brazil"], ["goals", 64], ["created_at", "2022-12-05 21:10:02.329209"], ["updated_at", "2022-12-05 21:10:02.329209"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Anna"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Saudi Arabia"], ["goals", 13], ["created_at", "2022-12-05 21:10:02.330460"], ["updated_at", "2022-12-05 21:10:02.330460"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sonte"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "Japan"], ["goals", 31], ["created_at", "2022-12-05 21:10:02.331549"], ["updated_at", "2022-12-05 21:10:02.331549"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mike"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "China"], ["goals", 42], ["created_at", "2022-12-05 21:10:02.332692"], ["updated_at", "2022-12-05 21:10:02.332692"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ray"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Poland"], ["goals", 72], ["created_at", "2022-12-05 21:10:02.333898"], ["updated_at", "2022-12-05 21:10:02.333898"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Sexy"], ["mascot", ""], ["standing", 1], ["created_at", "2022-12-05 21:10:02.340643"], ["updated_at", "2022-12-05 21:10:02.340643"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team JavaScript"], ["mascot", ""], ["standing", 2], ["created_at", "2022-12-05 21:10:02.342785"], ["updated_at", "2022-12-05 21:10:02.342785"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Flatiron"], ["mascot", ""], ["standing", 3], ["created_at", "2022-12-05 21:10:02.343944"], ["updated_at", "2022-12-05 21:10:02.343944"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team SnoopDog"], ["mascot", ""], ["standing", 4], ["created_at", "2022-12-05 21:10:02.345039"], ["updated_at", "2022-12-05 21:10:02.345039"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team BucketMaker"], ["mascot", ""], ["standing", 5], ["created_at", "2022-12-05 21:10:02.346048"], ["updated_at", "2022-12-05 21:10:02.346048"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 6], ["created_at", "2022-12-05 21:10:02.347038"], ["updated_at", "2022-12-05 21:10:02.347038"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 7], ["created_at", "2022-12-05 21:10:02.348030"], ["updated_at", "2022-12-05 21:10:02.348030"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 8], ["created_at", "2022-12-05 21:10:02.349229"], ["updated_at", "2022-12-05 21:10:02.349229"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maz"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Sudan"], ["goals", 70], ["created_at", "2022-12-05 21:10:27.917696"], ["updated_at", "2022-12-05 21:10:27.917696"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Branden"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "Vietnam"], ["goals", 69], ["created_at", "2022-12-05 21:10:27.919514"], ["updated_at", "2022-12-05 21:10:27.919514"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Daniel"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Mexico"], ["goals", 112], ["created_at", "2022-12-05 21:10:27.920972"], ["updated_at", "2022-12-05 21:10:27.920972"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alex"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "USA"], ["goals", 10], ["created_at", "2022-12-05 21:10:27.922311"], ["updated_at", "2022-12-05 21:10:27.922311"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sam"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-05 21:10:27.923443"], ["updated_at", "2022-12-05 21:10:27.923443"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stephen"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-05 21:10:27.924532"], ["updated_at", "2022-12-05 21:10:27.924532"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yesenia"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Mexico"], ["goals", 99], ["created_at", "2022-12-05 21:10:27.925664"], ["updated_at", "2022-12-05 21:10:27.925664"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paolo"], ["image", ""], ["position", "COMMENTATOR"], ["age", 23], ["country", "Venezuela"], ["goals", 0], ["created_at", "2022-12-05 21:10:27.926851"], ["updated_at", "2022-12-05 21:10:27.926851"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vera"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Russia"], ["goals", 14], ["created_at", "2022-12-05 21:10:27.928238"], ["updated_at", "2022-12-05 21:10:27.928238"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yana"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Russia"], ["goals", 17], ["created_at", "2022-12-05 21:10:27.929705"], ["updated_at", "2022-12-05 21:10:27.929705"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gavin"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 45], ["created_at", "2022-12-05 21:10:27.931317"], ["updated_at", "2022-12-05 21:10:27.931317"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oren"], ["image", ""], ["position", "BALLBOY"], ["age", 31], ["country", "NORTH KOREA"], ["goals", 0], ["created_at", "2022-12-05 21:10:27.932764"], ["updated_at", "2022-12-05 21:10:27.932764"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (1.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Andy"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "USA"], ["goals", 9], ["created_at", "2022-12-05 21:10:27.934116"], ["updated_at", "2022-12-05 21:10:27.934116"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chuck"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 80], ["created_at", "2022-12-05 21:10:27.938922"], ["updated_at", "2022-12-05 21:10:27.938922"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jason"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "USA"], ["goals", 81], ["created_at", "2022-12-05 21:10:27.941007"], ["updated_at", "2022-12-05 21:10:27.941007"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mason"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Cuba"], ["goals", 3], ["created_at", "2022-12-05 21:10:27.943034"], ["updated_at", "2022-12-05 21:10:27.943034"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dylan"], ["image", ""], ["position", "CHEERLEADER"], ["age", 69], ["country", "ANTARTICA"], ["goals", 0], ["created_at", "2022-12-05 21:10:27.944637"], ["updated_at", "2022-12-05 21:10:27.944637"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Claire"], ["image", ""], ["position", "THERAPIST"], ["age", 31], ["country", "Costa Rica"], ["goals", 11], ["created_at", "2022-12-05 21:10:27.946320"], ["updated_at", "2022-12-05 21:10:27.946320"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jon"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Croatia"], ["goals", 26], ["created_at", "2022-12-05 21:10:27.947599"], ["updated_at", "2022-12-05 21:10:27.947599"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaycee"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "India"], ["goals", 63], ["created_at", "2022-12-05 21:10:27.948924"], ["updated_at", "2022-12-05 21:10:27.948924"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rachel"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Brazil"], ["goals", 64], ["created_at", "2022-12-05 21:10:27.950134"], ["updated_at", "2022-12-05 21:10:27.950134"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Anna"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Saudi Arabia"], ["goals", 13], ["created_at", "2022-12-05 21:10:27.951628"], ["updated_at", "2022-12-05 21:10:27.951628"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sonte"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "Japan"], ["goals", 31], ["created_at", "2022-12-05 21:10:27.952971"], ["updated_at", "2022-12-05 21:10:27.952971"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mike"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "China"], ["goals", 42], ["created_at", "2022-12-05 21:10:27.955298"], ["updated_at", "2022-12-05 21:10:27.955298"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ray"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Poland"], ["goals", 72], ["created_at", "2022-12-05 21:10:27.956861"], ["updated_at", "2022-12-05 21:10:27.956861"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Sexy"], ["mascot", ""], ["standing", 1], ["created_at", "2022-12-05 21:10:27.961986"], ["updated_at", "2022-12-05 21:10:27.961986"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team JavaScript"], ["mascot", ""], ["standing", 2], ["created_at", "2022-12-05 21:10:27.963536"], ["updated_at", "2022-12-05 21:10:27.963536"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Flatiron"], ["mascot", ""], ["standing", 3], ["created_at", "2022-12-05 21:10:27.964788"], ["updated_at", "2022-12-05 21:10:27.964788"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team SnoopDog"], ["mascot", ""], ["standing", 4], ["created_at", "2022-12-05 21:10:27.966195"], ["updated_at", "2022-12-05 21:10:27.966195"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team BucketMaker"], ["mascot", ""], ["standing", 5], ["created_at", "2022-12-05 21:10:27.967484"], ["updated_at", "2022-12-05 21:10:27.967484"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 6], ["created_at", "2022-12-05 21:10:27.968792"], ["updated_at", "2022-12-05 21:10:27.968792"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 7], ["created_at", "2022-12-05 21:10:27.970172"], ["updated_at", "2022-12-05 21:10:27.970172"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 8], ["created_at", "2022-12-05 21:10:27.975143"], ["updated_at", "2022-12-05 21:10:27.975143"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "divisions"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "players"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "players" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" varchar, "position" varchar, "age" integer, "country" varchar, "goals" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "teams"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "teams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "mascot" varchar, "standing" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adivisions" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_adivisions_on_team_id" ON "adivisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_adivisions_on_player_id" ON "adivisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "adivisions" ("id","name","player_id","team_id","created_at","updated_at")
+                     SELECT "id","name","player_id","team_id","created_at","updated_at" FROM "divisions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "divisions"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7fcbecbbcf"
+FOREIGN KEY ("player_id")
+  REFERENCES "players" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "divisions" ("id","name","player_id","team_id","created_at","updated_at")
+                     SELECT "id","name","player_id","team_id","created_at","updated_at" FROM "adivisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "adivisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adivisions" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_adivisions_on_team_id" ON "adivisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_adivisions_on_player_id" ON "adivisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "adivisions" ("id","name","player_id","team_id","created_at","updated_at")
+                     SELECT "id","name","player_id","team_id","created_at","updated_at" FROM "divisions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "divisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7fcbecbbcf"
+FOREIGN KEY ("player_id")
+  REFERENCES "players" ("id")
+, CONSTRAINT "fk_rails_ad80bce56b"
+FOREIGN KEY ("team_id")
+  REFERENCES "teams" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "divisions" ("id","name","player_id","team_id","created_at","updated_at")
+                     SELECT "id","name","player_id","team_id","created_at","updated_at" FROM "adivisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "adivisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221205183243)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221205182712),
+(20221205183042);
+
+[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-05 21:12:08.382012"], ["updated_at", "2022-12-05 21:12:08.382012"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "8661f3883fd683420f81e813bb760241ab9daa6d"], ["created_at", "2022-12-05 21:12:08.384939"], ["updated_at", "2022-12-05 21:12:08.384939"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "divisions"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "players"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "players" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" varchar, "position" varchar, "age" integer, "country" varchar, "goals" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "teams"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "teams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "mascot" varchar, "standing" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adivisions" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_adivisions_on_team_id" ON "adivisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_adivisions_on_player_id" ON "adivisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "adivisions" ("id","name","player_id","team_id","created_at","updated_at")
+                     SELECT "id","name","player_id","team_id","created_at","updated_at" FROM "divisions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "divisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7fcbecbbcf"
+FOREIGN KEY ("player_id")
+  REFERENCES "players" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "divisions" ("id","name","player_id","team_id","created_at","updated_at")
+                     SELECT "id","name","player_id","team_id","created_at","updated_at" FROM "adivisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "adivisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "adivisions" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_adivisions_on_team_id" ON "adivisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_adivisions_on_player_id" ON "adivisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "adivisions" ("id","name","player_id","team_id","created_at","updated_at")
+                     SELECT "id","name","player_id","team_id","created_at","updated_at" FROM "divisions"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "divisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer NOT NULL PRIMARY KEY, "name" varchar DEFAULT NULL, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7fcbecbbcf"
+FOREIGN KEY ("player_id")
+  REFERENCES "players" ("id")
+, CONSTRAINT "fk_rails_ad80bce56b"
+FOREIGN KEY ("team_id")
+  REFERENCES "teams" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "divisions" ("id","name","player_id","team_id","created_at","updated_at")
+                     SELECT "id","name","player_id","team_id","created_at","updated_at" FROM "adivisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "adivisions"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221205183243)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20221205182712),
+(20221205183042);
+
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-05 21:12:08.407234"], ["updated_at", "2022-12-05 21:12:08.407234"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2022-12-05 21:12:08.409007"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "8661f3883fd683420f81e813bb760241ab9daa6d"], ["created_at", "2022-12-05 21:12:08.410485"], ["updated_at", "2022-12-05 21:12:08.410485"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maz"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Sudan"], ["goals", 70], ["created_at", "2022-12-05 21:12:08.423454"], ["updated_at", "2022-12-05 21:12:08.423454"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Branden"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "Vietnam"], ["goals", 69], ["created_at", "2022-12-05 21:12:08.425069"], ["updated_at", "2022-12-05 21:12:08.425069"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Daniel"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Mexico"], ["goals", 112], ["created_at", "2022-12-05 21:12:08.426276"], ["updated_at", "2022-12-05 21:12:08.426276"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alex"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "USA"], ["goals", 10], ["created_at", "2022-12-05 21:12:08.427499"], ["updated_at", "2022-12-05 21:12:08.427499"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sam"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-05 21:12:08.428793"], ["updated_at", "2022-12-05 21:12:08.428793"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stephen"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-05 21:12:08.429912"], ["updated_at", "2022-12-05 21:12:08.429912"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yesenia"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Mexico"], ["goals", 99], ["created_at", "2022-12-05 21:12:08.431053"], ["updated_at", "2022-12-05 21:12:08.431053"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paolo"], ["image", ""], ["position", "COMMENTATOR"], ["age", 23], ["country", "Venezuela"], ["goals", 0], ["created_at", "2022-12-05 21:12:08.432420"], ["updated_at", "2022-12-05 21:12:08.432420"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vera"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Russia"], ["goals", 14], ["created_at", "2022-12-05 21:12:08.433957"], ["updated_at", "2022-12-05 21:12:08.433957"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yana"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Russia"], ["goals", 17], ["created_at", "2022-12-05 21:12:08.435374"], ["updated_at", "2022-12-05 21:12:08.435374"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gavin"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 45], ["created_at", "2022-12-05 21:12:08.436971"], ["updated_at", "2022-12-05 21:12:08.436971"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oren"], ["image", ""], ["position", "BALLBOY"], ["age", 31], ["country", "NORTH KOREA"], ["goals", 0], ["created_at", "2022-12-05 21:12:08.438668"], ["updated_at", "2022-12-05 21:12:08.438668"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Andy"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "USA"], ["goals", 9], ["created_at", "2022-12-05 21:12:08.440693"], ["updated_at", "2022-12-05 21:12:08.440693"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chuck"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 80], ["created_at", "2022-12-05 21:12:08.442099"], ["updated_at", "2022-12-05 21:12:08.442099"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jason"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "USA"], ["goals", 81], ["created_at", "2022-12-05 21:12:08.443422"], ["updated_at", "2022-12-05 21:12:08.443422"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mason"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Cuba"], ["goals", 3], ["created_at", "2022-12-05 21:12:08.444866"], ["updated_at", "2022-12-05 21:12:08.444866"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dylan"], ["image", ""], ["position", "CHEERLEADER"], ["age", 69], ["country", "ANTARTICA"], ["goals", 0], ["created_at", "2022-12-05 21:12:08.449369"], ["updated_at", "2022-12-05 21:12:08.449369"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Claire"], ["image", ""], ["position", "THERAPIST"], ["age", 31], ["country", "Costa Rica"], ["goals", 11], ["created_at", "2022-12-05 21:12:08.450761"], ["updated_at", "2022-12-05 21:12:08.450761"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jon"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Croatia"], ["goals", 26], ["created_at", "2022-12-05 21:12:08.452062"], ["updated_at", "2022-12-05 21:12:08.452062"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaycee"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "India"], ["goals", 63], ["created_at", "2022-12-05 21:12:08.453605"], ["updated_at", "2022-12-05 21:12:08.453605"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rachel"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Brazil"], ["goals", 64], ["created_at", "2022-12-05 21:12:08.454973"], ["updated_at", "2022-12-05 21:12:08.454973"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Anna"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Saudi Arabia"], ["goals", 13], ["created_at", "2022-12-05 21:12:08.456200"], ["updated_at", "2022-12-05 21:12:08.456200"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sonte"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "Japan"], ["goals", 31], ["created_at", "2022-12-05 21:12:08.457514"], ["updated_at", "2022-12-05 21:12:08.457514"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mike"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "China"], ["goals", 42], ["created_at", "2022-12-05 21:12:08.458840"], ["updated_at", "2022-12-05 21:12:08.458840"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ray"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Poland"], ["goals", 72], ["created_at", "2022-12-05 21:12:08.460209"], ["updated_at", "2022-12-05 21:12:08.460209"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Sexy"], ["mascot", ""], ["standing", 1], ["created_at", "2022-12-05 21:12:08.465826"], ["updated_at", "2022-12-05 21:12:08.465826"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team JavaScript"], ["mascot", ""], ["standing", 2], ["created_at", "2022-12-05 21:12:08.467226"], ["updated_at", "2022-12-05 21:12:08.467226"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Flatiron"], ["mascot", ""], ["standing", 3], ["created_at", "2022-12-05 21:12:08.468557"], ["updated_at", "2022-12-05 21:12:08.468557"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team SnoopDog"], ["mascot", ""], ["standing", 4], ["created_at", "2022-12-05 21:12:08.469871"], ["updated_at", "2022-12-05 21:12:08.469871"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team BucketMaker"], ["mascot", ""], ["standing", 5], ["created_at", "2022-12-05 21:12:08.471511"], ["updated_at", "2022-12-05 21:12:08.471511"]]
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 6], ["created_at", "2022-12-05 21:12:08.474913"], ["updated_at", "2022-12-05 21:12:08.474913"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 7], ["created_at", "2022-12-05 21:12:08.476557"], ["updated_at", "2022-12-05 21:12:08.476557"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 8], ["created_at", "2022-12-05 21:12:08.477731"], ["updated_at", "2022-12-05 21:12:08.477731"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 1], ["team_id", 1], ["created_at", "2022-12-05 21:12:08.491544"], ["updated_at", "2022-12-05 21:12:08.491544"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 2], ["team_id", 2], ["created_at", "2022-12-05 21:12:08.493956"], ["updated_at", "2022-12-05 21:12:08.493956"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 3], ["team_id", 3], ["created_at", "2022-12-05 21:12:08.495945"], ["updated_at", "2022-12-05 21:12:08.495945"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 4], ["team_id", 4], ["created_at", "2022-12-05 21:12:08.497896"], ["updated_at", "2022-12-05 21:12:08.497896"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 5], ["team_id", 5], ["created_at", "2022-12-05 21:12:08.499852"], ["updated_at", "2022-12-05 21:12:08.499852"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 6], ["team_id", 6], ["created_at", "2022-12-05 21:12:08.501816"], ["updated_at", "2022-12-05 21:12:08.501816"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 7], ["team_id", 7], ["created_at", "2022-12-05 21:12:08.504459"], ["updated_at", "2022-12-05 21:12:08.504459"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 8], ["team_id", 8], ["created_at", "2022-12-05 21:12:08.509157"], ["updated_at", "2022-12-05 21:12:08.509157"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTeams (20221205182712)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "teams" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "mascot" varchar, "standing" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205182712"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePlayers (20221205183042)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "players" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "image" varchar, "position" varchar, "age" integer, "country" varchar, "goals" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205183042"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDivisions (20221205183243)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "divisions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "player_id" integer NOT NULL, "team_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_7fcbecbbcf"
+FOREIGN KEY ("player_id")
+  REFERENCES "players" ("id")
+, CONSTRAINT "fk_rails_ad80bce56b"
+FOREIGN KEY ("team_id")
+  REFERENCES "teams" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_player_id" ON "divisions" ("player_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_divisions_on_team_id" ON "divisions" ("team_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221205183243"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-12-05 21:12:24.358490"], ["updated_at", "2022-12-05 21:12:24.358490"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Maz"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Sudan"], ["goals", 70], ["created_at", "2022-12-05 21:12:24.381979"], ["updated_at", "2022-12-05 21:12:24.381979"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Branden"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "Vietnam"], ["goals", 69], ["created_at", "2022-12-05 21:12:24.383602"], ["updated_at", "2022-12-05 21:12:24.383602"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Daniel"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Mexico"], ["goals", 112], ["created_at", "2022-12-05 21:12:24.384841"], ["updated_at", "2022-12-05 21:12:24.384841"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alex"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "USA"], ["goals", 10], ["created_at", "2022-12-05 21:12:24.386154"], ["updated_at", "2022-12-05 21:12:24.386154"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sam"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-05 21:12:24.387624"], ["updated_at", "2022-12-05 21:12:24.387624"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Stephen"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "USA"], ["goals", 32], ["created_at", "2022-12-05 21:12:24.389676"], ["updated_at", "2022-12-05 21:12:24.389676"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yesenia"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Mexico"], ["goals", 99], ["created_at", "2022-12-05 21:12:24.391103"], ["updated_at", "2022-12-05 21:12:24.391103"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Paolo"], ["image", ""], ["position", "COMMENTATOR"], ["age", 23], ["country", "Venezuela"], ["goals", 0], ["created_at", "2022-12-05 21:12:24.392401"], ["updated_at", "2022-12-05 21:12:24.392401"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Vera"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Russia"], ["goals", 14], ["created_at", "2022-12-05 21:12:24.393656"], ["updated_at", "2022-12-05 21:12:24.393656"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Yana"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Russia"], ["goals", 17], ["created_at", "2022-12-05 21:12:24.394952"], ["updated_at", "2022-12-05 21:12:24.394952"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Gavin"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 45], ["created_at", "2022-12-05 21:12:24.396215"], ["updated_at", "2022-12-05 21:12:24.396215"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oren"], ["image", ""], ["position", "BALLBOY"], ["age", 31], ["country", "NORTH KOREA"], ["goals", 0], ["created_at", "2022-12-05 21:12:24.397524"], ["updated_at", "2022-12-05 21:12:24.397524"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Andy"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "USA"], ["goals", 9], ["created_at", "2022-12-05 21:12:24.398844"], ["updated_at", "2022-12-05 21:12:24.398844"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chuck"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "USA"], ["goals", 80], ["created_at", "2022-12-05 21:12:24.400047"], ["updated_at", "2022-12-05 21:12:24.400047"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jason"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "USA"], ["goals", 81], ["created_at", "2022-12-05 21:12:24.401163"], ["updated_at", "2022-12-05 21:12:24.401163"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mason"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Cuba"], ["goals", 3], ["created_at", "2022-12-05 21:12:24.402587"], ["updated_at", "2022-12-05 21:12:24.402587"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dylan"], ["image", ""], ["position", "CHEERLEADER"], ["age", 69], ["country", "ANTARTICA"], ["goals", 0], ["created_at", "2022-12-05 21:12:24.404305"], ["updated_at", "2022-12-05 21:12:24.404305"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Claire"], ["image", ""], ["position", "THERAPIST"], ["age", 31], ["country", "Costa Rica"], ["goals", 11], ["created_at", "2022-12-05 21:12:24.405801"], ["updated_at", "2022-12-05 21:12:24.405801"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jon"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Croatia"], ["goals", 26], ["created_at", "2022-12-05 21:12:24.407136"], ["updated_at", "2022-12-05 21:12:24.407136"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Jaycee"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "India"], ["goals", 63], ["created_at", "2022-12-05 21:12:24.408388"], ["updated_at", "2022-12-05 21:12:24.408388"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rachel"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "Brazil"], ["goals", 64], ["created_at", "2022-12-05 21:12:24.409556"], ["updated_at", "2022-12-05 21:12:24.409556"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Anna"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Saudi Arabia"], ["goals", 13], ["created_at", "2022-12-05 21:12:24.410674"], ["updated_at", "2022-12-05 21:12:24.410674"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sonte"], ["image", ""], ["position", "Attacker"], ["age", 23], ["country", "Japan"], ["goals", 31], ["created_at", "2022-12-05 21:12:24.411724"], ["updated_at", "2022-12-05 21:12:24.411724"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Mike"], ["image", ""], ["position", "Midfield"], ["age", 31], ["country", "China"], ["goals", 42], ["created_at", "2022-12-05 21:12:24.412987"], ["updated_at", "2022-12-05 21:12:24.412987"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Create (0.1ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Ray"], ["image", ""], ["position", "Defender"], ["age", 25], ["country", "Poland"], ["goals", 72], ["created_at", "2022-12-05 21:12:24.414196"], ["updated_at", "2022-12-05 21:12:24.414196"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.2ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Sexy"], ["mascot", ""], ["standing", 1], ["created_at", "2022-12-05 21:12:24.420552"], ["updated_at", "2022-12-05 21:12:24.420552"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team JavaScript"], ["mascot", ""], ["standing", 2], ["created_at", "2022-12-05 21:12:24.422617"], ["updated_at", "2022-12-05 21:12:24.422617"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Flatiron"], ["mascot", ""], ["standing", 3], ["created_at", "2022-12-05 21:12:24.424570"], ["updated_at", "2022-12-05 21:12:24.424570"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team SnoopDog"], ["mascot", ""], ["standing", 4], ["created_at", "2022-12-05 21:12:24.425825"], ["updated_at", "2022-12-05 21:12:24.425825"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team BucketMaker"], ["mascot", ""], ["standing", 5], ["created_at", "2022-12-05 21:12:24.427046"], ["updated_at", "2022-12-05 21:12:24.427046"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 6], ["created_at", "2022-12-05 21:12:24.428209"], ["updated_at", "2022-12-05 21:12:24.428209"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (0.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 7], ["created_at", "2022-12-05 21:12:24.429404"], ["updated_at", "2022-12-05 21:12:24.429404"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTeam Create (3.5ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team"], ["mascot", ""], ["standing", 8], ["created_at", "2022-12-05 21:12:24.430735"], ["updated_at", "2022-12-05 21:12:24.430735"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 1], ["team_id", 1], ["created_at", "2022-12-05 21:12:24.446084"], ["updated_at", "2022-12-05 21:12:24.446084"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 2], ["team_id", 2], ["created_at", "2022-12-05 21:12:24.448423"], ["updated_at", "2022-12-05 21:12:24.448423"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.1ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 3], ["team_id", 3], ["created_at", "2022-12-05 21:12:24.450460"], ["updated_at", "2022-12-05 21:12:24.450460"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 4], ["team_id", 4], ["created_at", "2022-12-05 21:12:24.452586"], ["updated_at", "2022-12-05 21:12:24.452586"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.3ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 5], ["team_id", 5], ["created_at", "2022-12-05 21:12:24.455271"], ["updated_at", "2022-12-05 21:12:24.455271"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 6], ["team_id", 6], ["created_at", "2022-12-05 21:12:24.457976"], ["updated_at", "2022-12-05 21:12:24.457976"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 7], ["team_id", 7], ["created_at", "2022-12-05 21:12:24.460509"], ["updated_at", "2022-12-05 21:12:24.460509"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mDivision Create (0.2ms)[0m  [1m[32mINSERT INTO "divisions" ("name", "player_id", "team_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["player_id", 8], ["team_id", 8], ["created_at", "2022-12-05 21:12:24.465306"], ["updated_at", "2022-12-05 21:12:24.465306"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2022-12-05 14:12:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/maz/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/maz/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 711)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 3360)
+
+
+Started GET "/" for ::1 at 2022-12-05 14:12:48 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/maz/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/maz/.rvm/rubies/ruby-2.7.4/lib/ruby/gems/2.7.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 451)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1140)
+
+
+Started GET "/pizzas" for ::1 at 2022-12-05 14:12:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pizzas"):
+  
+Started GET "/playeers" for ::1 at 2022-12-05 14:12:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/playeers"):
+  
+Started GET "/favicon.ico" for ::1 at 2022-12-05 14:12:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/players" for ::1 at 2022-12-05 14:12:59 -0700
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.68ms)
+Completed 200 OK in 48ms (Views: 35.7ms | ActiveRecord: 1.1ms | Allocations: 27400)
+
+
+Started GET "/playeers" for ::1 at 2022-12-05 14:45:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/playeers"):
+  
+Started GET "/players" for ::1 at 2022-12-05 14:45:50 -0700
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (3.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.9ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 3.4ms | Allocations: 4377)
+
+
+Started GET "/players" for ::1 at 2022-12-05 14:50:32 -0700
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.62ms)
+Completed 200 OK in 21ms (Views: 16.3ms | ActiveRecord: 3.8ms | Allocations: 9679)
+
+
+Started GET "/players/1" for ::1 at 2022-12-05 14:50:36 -0700
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 18ms (Views: 0.7ms | ActiveRecord: 0.4ms | Allocations: 1512)
+
+
+Started GET "/players/8" for ::1 at 2022-12-05 14:50:40 -0700
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 701)
+
+
+Started GET "/players" for ::1 at 2022-12-05 14:59:35 -0700
+Processing by PlayersController#index as */*
+  Parameters: {"price"=>5, "pizza_id"=>1, "restaurant_id"=>3, "player"=>{}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.42ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 4.0ms | Allocations: 6429)
+
+
+Started POST "/players" for ::1 at 2022-12-05 15:00:45 -0700
+Processing by PlayersController#create as */*
+  Parameters: {"id"=>26, "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>26, "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+[31mUnpermitted parameters: :id, :player. Context: { controller: PlayersController, action: create, request: #<ActionDispatch::Request:0x000000010d57c340>, params: {"id"=>26, "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "controller"=>"players", "action"=>"create", "player"=>{"id"=>26, "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:20:in `create'
+  [1m[36mPlayer Create (1.2ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "mezoo"], ["image", ""], ["position", "Defender"], ["age", 420], ["country", "Saudi Arabia"], ["goals", 150], ["created_at", "2022-12-05 22:00:45.132236"], ["updated_at", "2022-12-05 22:00:45.132236"]]
+  ↳ app/controllers/players_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/players_controller.rb:20:in `create'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.29ms)
+Completed 201 Created in 15ms (Views: 0.8ms | ActiveRecord: 1.8ms | Allocations: 2368)
+
+
+Started PATCH "/players" for ::1 at 2022-12-05 15:01:35 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/players"):
+  
+Started PATCH "/players" for ::1 at 2022-12-05 15:01:50 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/players"):
+  
+Started PATCH "/players" for ::1 at 2022-12-05 15:01:55 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/players"):
+  
+Started PATCH "/players" for ::1 at 2022-12-05 15:01:55 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/players"):
+  
+Started PATCH "/players" for ::1 at 2022-12-05 15:01:56 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/players"):
+  
+Started PATCH "/players" for ::1 at 2022-12-05 15:01:56 -0700
+  
+ActionController::RoutingError (No route matches [PATCH] "/players"):
+  
+Started DELETE "/players" for ::1 at 2022-12-05 15:02:58 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/players"):
+  
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:03:11 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.7ms | Allocations: 2567)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:03:13 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 526)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started GET "/players/26" for ::1 at 2022-12-05 15:03:22 -0700
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"26", "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.4ms)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1040)
+
+
+Started GET "/teams" for ::1 at 2022-12-05 15:05:02 -0700
+Processing by TeamsController#index as HTML
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.78ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 1.2ms | Allocations: 18749)
+
+
+Started GET "/teams/1" for ::1 at 2022-12-05 15:05:07 -0700
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9:in `show'
+[active_model_serializers] Rendered TeamSerializer with ActiveModelSerializers::Adapter::Attributes (0.38ms)
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 782)
+
+
+Started GET "/teams/2" for ::1 at 2022-12-05 15:05:09 -0700
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9:in `show'
+[active_model_serializers] Rendered TeamSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 658)
+
+
+Started GET "/teams/3" for ::1 at 2022-12-05 15:05:11 -0700
+Processing by TeamsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9:in `show'
+[active_model_serializers] Rendered TeamSerializer with ActiveModelSerializers::Adapter::Attributes (0.57ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 658)
+
+
+Started GET "/players/26" for ::1 at 2022-12-05 15:08:09 -0700
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"26", "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"mezoo", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.25ms)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 1.3ms | Allocations: 2980)
+
+
+Started PATCH "/players/26" for ::1 at 2022-12-05 15:08:28 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"id"=>"26", "name"=>"snoop", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"snoop", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[31mUnpermitted parameters: :id, :player. Context: { controller: PlayersController, action: update, request: #<ActionDispatch::Request:0x000000010f1a1d68>, params: {"id"=>"26", "name"=>"snoop", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "controller"=>"players", "action"=>"update", "player"=>{"id"=>"26", "name"=>"snoop", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:15:in `update'
+  [1m[36mPlayer Update (2.1ms)[0m  [1m[33mUPDATE "players" SET "name" = ?, "updated_at" = ? WHERE "players"."id" = ?[0m  [["name", "snoop"], ["updated_at", "2022-12-05 22:08:28.122160"], ["id", 26]]
+  ↳ app/controllers/players_controller.rb:15:in `update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/players_controller.rb:15:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.33ms)
+Completed 202 Accepted in 11ms (Views: 0.8ms | ActiveRecord: 3.1ms | Allocations: 2796)
+
+
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:08:38 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"snoop", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"snoop", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 526)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:08:41 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"snoop", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"snoop", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:08:52 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms | Allocations: 526)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:08:53 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:09:12 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:09:13 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:09:29 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"exception_object_id"=>24500, "id"=>"26", "trace"=>"app/controllers/players_controller.rb:26:in `destroy'", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:09:30 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"exception_object_id"=>24500, "id"=>"26", "trace"=>"app/controllers/players_controller.rb:26:in `destroy'", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:09:38 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"exception_object_id"=>24500, "id"=>"26", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:09:39 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"exception_object_id"=>24500, "id"=>"26", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:09:39 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"exception_object_id"=>24500, "id"=>"26", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players" for ::1 at 2022-12-05 15:09:48 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/players"):
+  
+Started DELETE "/players" for ::1 at 2022-12-05 15:09:49 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/players"):
+  
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:09:54 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"exception_object_id"=>24500, "id"=>"26", "player"=>{"id"=>"26"}}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.1ms | Allocations: 525)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started GET "/players" for ::1 at 2022-12-05 15:10:03 -0700
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.8ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.91ms)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.8ms | Allocations: 4548)
+
+
+Started PATCH "/players/26" for ::1 at 2022-12-05 15:10:26 -0700
+Processing by PlayersController#update as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14:in `update'
+[31mUnpermitted parameters: :id, :player. Context: { controller: PlayersController, action: update, request: #<ActionDispatch::Request:0x0000000103b93170>, params: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "controller"=>"players", "action"=>"update", "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:15:in `update'
+  [1m[36mPlayer Update (0.6ms)[0m  [1m[33mUPDATE "players" SET "name" = ?, "updated_at" = ? WHERE "players"."id" = ?[0m  [["name", "Salem"], ["updated_at", "2022-12-05 22:10:26.657031"], ["id", 26]]
+  ↳ app/controllers/players_controller.rb:15:in `update'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/players_controller.rb:15:in `update'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.52ms)
+Completed 202 Accepted in 14ms (Views: 1.2ms | ActiveRecord: 2.4ms | Allocations: 2568)
+
+
+Started GET "/teams" for ::1 at 2022-12-05 15:10:46 -0700
+Processing by TeamsController#index as */*
+  Parameters: {"id"=>26, "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "team"=>{"id"=>26, "name"=>"Salem"}}
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams"[0m
+  ↳ app/controllers/teams_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.55ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 2.0ms | Allocations: 3282)
+
+
+Started POST "/teams" for ::1 at 2022-12-05 15:11:56 -0700
+Processing by TeamsController#create as */*
+  Parameters: {"id"=>9, "name"=>"Team Weed", "mascot"=>"", "standing"=>9, "team"=>{"id"=>9, "name"=>"Team Weed", "mascot"=>"", "standing"=>9}}
+[31mUnpermitted parameters: :id, :team. Context: { controller: TeamsController, action: create, request: #<ActionDispatch::Request:0x000000010d854ae0>, params: {"id"=>9, "name"=>"Team Weed", "mascot"=>"", "standing"=>9, "controller"=>"teams", "action"=>"create", "team"=>{"id"=>9, "name"=>"Team Weed", "mascot"=>"", "standing"=>9}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/teams_controller.rb:20:in `create'
+  [1m[36mTeam Create (0.3ms)[0m  [1m[32mINSERT INTO "teams" ("name", "mascot", "standing", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Team Weed"], ["mascot", ""], ["standing", 9], ["created_at", "2022-12-05 22:11:56.769514"], ["updated_at", "2022-12-05 22:11:56.769514"]]
+  ↳ app/controllers/teams_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/teams_controller.rb:20:in `create'
+[active_model_serializers] Rendered TeamSerializer with ActiveModelSerializers::Adapter::Attributes (0.15ms)
+Completed 201 Created in 9ms (Views: 1.2ms | ActiveRecord: 1.7ms | Allocations: 3641)
+
+
+Started GET "/divisions" for ::1 at 2022-12-05 15:13:58 -0700
+Processing by DivisionsController#index as HTML
+  [1m[36mDivision Load (0.1ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.59ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 1.3ms | Allocations: 50116)
+
+
+Started GET "/players" for ::1 at 2022-12-05 15:15:46 -0700
+Processing by PlayersController#index as */*
+  Parameters: {"id"=>9, "name"=>"Team Weed", "mascot"=>"", "standing"=>9, "player"=>{"id"=>9, "name"=>"Team Weed"}}
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.32ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.5ms | Allocations: 4580)
+
+
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:15:57 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Team Weed", "mascot"=>"", "standing"=>9, "player"=>{"id"=>"26", "name"=>"Team Weed"}}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms | Allocations: 619)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:16:56 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Team Weed", "mascot"=>"", "standing"=>9, "player"=>{"id"=>"26", "name"=>"Team Weed"}}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."player_id" = ?[0m  [["player_id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.4ms | Allocations: 9444)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: teams.player_id):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started GET "/players/26" for ::1 at 2022-12-05 15:19:48 -0700
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"26", "name"=>"Team Weed", "mascot"=>"", "standing"=>9, "player"=>{"id"=>"26", "name"=>"Team Weed"}}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 1.2ms | Allocations: 3000)
+
+
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:20:08 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."player_id" = ?[0m  [["player_id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.2ms | Allocations: 5350)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: teams.player_id):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:21:30 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.1ms | Allocations: 4378)
+
+
+  
+NameError (undefined local variable or method `players' for #<PlayersController:0x000000000130d8>
+Did you mean?  player):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:21:48 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.1ms | Allocations: 2559)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:22:01 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."player_id" = ?[0m  [["player_id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.4ms | Allocations: 7285)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: teams.player_id):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started GET "/divisions" for ::1 at 2022-12-05 15:22:26 -0700
+Processing by DivisionsController#index as HTML
+  [1m[36mDivision Load (0.8ms)[0m  [1m[34mSELECT "divisions".* FROM "divisions"[0m
+  ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.6ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mPlayer Load (0.0ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mTeam Load (0.0ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/divisions_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.59ms)
+Completed 200 OK in 44ms (Views: 34.8ms | ActiveRecord: 3.5ms | Allocations: 24582)
+
+
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:23:44 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTeam Load (0.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."player_id" = ?[0m  [["player_id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.7ms | Allocations: 2203)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: teams.player_id):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started GET "/players/26" for ::1 at 2022-12-05 15:27:26 -0700
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9:in `show'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 1.2ms | Allocations: 3001)
+
+
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:29:50 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."player_id" = ?[0m  [["player_id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.7ms | Allocations: 7295)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: teams.player_id):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:32:43 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTeam Load (0.1ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."player_id" = ?[0m  [["player_id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.8ms | Allocations: 7257)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: teams.player_id):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:32:44 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTeam Load (0.2ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."player_id" = ?[0m  [["player_id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 2204)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: teams.player_id):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:32:46 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTeam Load (0.4ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."player_id" = ?[0m  [["player_id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.6ms | Allocations: 2202)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: teams.player_id):
+  
+app/controllers/players_controller.rb:26:in `destroy'
+Started DELETE "/players/26" for ::1 at 2022-12-05 15:33:19 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"26", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mPlayer Destroy (1.7ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = ?[0m  [["id", 26]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 204 No Content in 9ms (ActiveRecord: 4.1ms | Allocations: 3824)
+
+
+Started POST "/players/" for ::1 at 2022-12-05 15:35:15 -0700
+Processing by PlayersController#create as */*
+  Parameters: {"id"=>26, "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>26, "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+[31mUnpermitted parameters: :id, :player. Context: { controller: PlayersController, action: create, request: #<ActionDispatch::Request:0x000000010d9f3e28>, params: {"id"=>26, "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "controller"=>"players", "action"=>"create", "player"=>{"id"=>26, "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:20:in `create'
+  [1m[36mPlayer Create (1.7ms)[0m  [1m[32mINSERT INTO "players" ("name", "image", "position", "age", "country", "goals", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Salem"], ["image", ""], ["position", "Defender"], ["age", 420], ["country", "Saudi Arabia"], ["goals", 150], ["created_at", "2022-12-05 22:35:15.156884"], ["updated_at", "2022-12-05 22:35:15.156884"]]
+  ↳ app/controllers/players_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/players_controller.rb:20:in `create'
+[active_model_serializers] Rendered PlayerSerializer with ActiveModelSerializers::Adapter::Attributes (5.2ms)
+Completed 201 Created in 28ms (Views: 8.7ms | ActiveRecord: 3.2ms | Allocations: 2470)
+
+
+Started DELETE "/players/" for ::1 at 2022-12-05 15:35:24 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/players"):
+  
+Started DELETE "/players/" for ::1 at 2022-12-05 15:35:33 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/players"):
+  
+Started DELETE "/players/" for ::1 at 2022-12-05 15:35:35 -0700
+  
+ActionController::RoutingError (No route matches [DELETE] "/players"):
+  
+Started DELETE "/players/27" for ::1 at 2022-12-05 15:35:44 -0700
+Processing by PlayersController#destroy as */*
+  Parameters: {"id"=>"27", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150, "player"=>{"id"=>"27", "name"=>"Salem", "image"=>"", "position"=>"Defender", "age"=>420, "country"=>"Saudi Arabia", "goals"=>150}}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mPlayer Destroy (1.0ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = ?[0m  [["id", 27]]
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/players_controller.rb:26:in `destroy'
+Completed 204 No Content in 10ms (ActiveRecord: 3.3ms | Allocations: 1755)
+
+
+Started GET "/players" for ::1 at 2022-12-05 15:35:52 -0700
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.79ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.6ms | Allocations: 4404)
+>>>>>>> Mazinnn
 
 
