@@ -10,6 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema[7.0].define(version: 2022_12_06_190102) do
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+=======
 ActiveRecord::Schema[7.0].define(version: 2022_12_05_183243) do
   create_table "divisions", force: :cascade do |t|
     t.string "name"
@@ -33,10 +39,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_183243) do
     t.integer "age"
     t.string "country"
     t.integer "goals"
+>>>>>>> Mazinnn
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
   create_table "teams", force: :cascade do |t|
     t.string "name"
     t.string "mascot"
@@ -49,4 +58,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_183243) do
 
   add_foreign_key "divisions", "players"
   add_foreign_key "divisions", "teams"
+>>>>>>> Mazinnn
 end
