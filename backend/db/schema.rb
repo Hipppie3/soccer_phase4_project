@@ -13,6 +13,11 @@
 ActiveRecord::Schema[7.0].define(version: 2022_12_05_183243) do
   create_table "divisions", force: :cascade do |t|
     t.string "name"
+    t.string "logo"
+    t.integer "won"
+    t.integer "draw"
+    t.integer "lost"
+    t.integer "points"
     t.integer "player_id", null: false
     t.integer "team_id", null: false
     t.datetime "created_at", null: false
@@ -36,6 +41,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_183243) do
     t.string "name"
     t.string "mascot"
     t.integer "standing"
+    t.string "top_scorer"
+    t.string "team_captin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

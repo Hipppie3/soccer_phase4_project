@@ -29,7 +29,7 @@ class TeamsController < ApplicationController
 
     private
     def teams_params
-        params.permit(:name, :mascot, :standing)
+        params.permit(:name, :mascot, :top_scorer, :team_captin, :standing)
     end
 
 end
