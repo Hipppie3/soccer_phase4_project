@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState }  from "react";
 import { UserContext } from "../context/context";
 
-function NewPlayerForm({setIsOpen, items, setItems}) {
+function NewPlayerForm({setIsOpen, players, setPlayers}) {
 
     const [formData, setFormData] = useState({
         name: "",
@@ -9,7 +9,7 @@ function NewPlayerForm({setIsOpen, items, setItems}) {
         position: "",
         age: "",
         country: "",
-        goals: "",
+        goals: "0",
     });
     
     const handleInfoChange = (e) => {
@@ -30,7 +30,7 @@ function NewPlayerForm({setIsOpen, items, setItems}) {
             formData.position === "" ||
             formData.age === "" ||
             formData.country === "" ||
-            formData.goals === ""){
+            formData.goals === "0"){
                 alert("Please complete form to submit.")
                 return
         }
@@ -40,7 +40,7 @@ function NewPlayerForm({setIsOpen, items, setItems}) {
                     body: JSON.stringify(formData)
                 }
             ).then(res => res.json())
-            .then(data => setItems([...items, data]))
+            .then(data => setPlayers([...players, data]))
             .then(() => handleClose())
         
    }
@@ -68,7 +68,7 @@ function NewPlayerForm({setIsOpen, items, setItems}) {
                         />
                     </div>
                     <div>
-                        <label class="mb-3 block text-base font-medium text-[#07074D]">Select a Category: </label>
+                        {/* <label class="mb-3 block text-base font-medium text-[#07074D]">Select a Category: </label>
                         <select onChange={handleInfoChange} id="category" defaultValue="DEFAULT" class="w-full resize-none rounded-md mb-3 border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
                             <option value="DEFAULT" disabled hidden>select category</option>
                                 <option id="divination">Divination</option>
@@ -77,19 +77,19 @@ function NewPlayerForm({setIsOpen, items, setItems}) {
                                 <option id="witchcraft">Witchcraft</option>
                                 <option id="swords">Tomes</option>
                                 <option id="wands">Wands</option>
-                        </select>   
+                        </select>    */}
                     </div>
                     <div class="mb-5">
                         <label
                         class="mb-3 block text-base font-medium text-[#07074D]"
                         >
-                        Price:
+                        Age:
                         </label>
                         <input
                         onChange={handleInfoChange}
                         type="number"
                         step="0.01"
-                        value={formData.price}
+                        value={formData.age}
                         id="price"
                         placeholder='$0.00'
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
@@ -103,7 +103,7 @@ function NewPlayerForm({setIsOpen, items, setItems}) {
                         </label>
                         <input
                         onChange={handleInfoChange}
-                        value={formData.img_url}
+                        value={formData.image}
                         type="text"
                         name="subject"
                         id="img_url"
@@ -113,11 +113,11 @@ function NewPlayerForm({setIsOpen, items, setItems}) {
                     </div>
                     <div class="mb-5">
                         <label class="mb-3 block text-base font-medium text-[#07074D]">
-                        Give your Item a Description: 
+                        Give your player a Position: 
                         </label>
                         <textarea
                         onChange={handleInfoChange}
-                        value={formData.description}
+                        value={formData.position}
                         rows="4"
                         type="text"
                         id="description"
