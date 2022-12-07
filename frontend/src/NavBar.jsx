@@ -1,6 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 function NavBar({ user, setUser }) {
   function handleLogoutClick() {
     fetch("/api/logout", { method: "DELETE" }).then((r) => {
@@ -9,32 +8,22 @@ function NavBar({ user, setUser }) {
       }
     });
   }
-
   return (
-    <Router>
     <header>
       <div>
-        <Route>
-        <Link to="/">Home</Link>
-        </Route>
+        <NavLink to="/">Home</NavLink>
       </div>
       <div>
         {user ? (
           <button onClick={handleLogoutClick}>Logout</button>
         ) : (
           <>
-            <Route>
-            <Link to="/signup">Signup</Link>
-            </Route>
-            <Route>
-            <Link to="/login">Login</Link>
-            </Route>
+            <NavLink to="/signup">Signup</NavLink>
+            <NavLink to="/login">Login</NavLink>
           </>
         )}
       </div>
     </header>
-    </Router>
   );
 }
-
 export default NavBar;
