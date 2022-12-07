@@ -18,7 +18,7 @@ const Player = () => {
         });
       }, []);
 
-      console.log(player)
+    
 
       
    
