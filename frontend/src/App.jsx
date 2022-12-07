@@ -4,6 +4,7 @@ import SignUp from "./SignUp";
 import Login from "./Login";
 import NavBar from "./NavBar";
 import Home from "./Home";
+import Player from "../components/Player";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
         {user ? (
           <Switch>
             <Route path="/">
-              <Home />
+              <Player />
             </Route>
           </Switch>
         ) : (
