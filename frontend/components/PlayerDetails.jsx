@@ -14,7 +14,7 @@ function PlayerDetails({p}) {
     <div class="p-6 flex flex-col justify-start">
       <h5 class="text-gray-900 text-xl font-medium mb-2">{name}</h5>
       <p class="text-gray-700 text-base mb-4">
-        Position: {position}, Age: {age}, Country: {country}, Goals: {goals}
+        {position}, {age}, {country}, {goals}
       </p>
       <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
     </div>

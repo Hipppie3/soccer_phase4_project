@@ -5,7 +5,7 @@ import PlayerDetails from "./PlayerDetails";
 const PlayerCard = ({player}) => {
 const players = player.map((p) => {
     return (
-        <PlayerDetails p= {p} key = {p.goals}></PlayerDetails>
+        <PlayerDetails p= {p} key = {p.id}></PlayerDetails>
     );
 })
 

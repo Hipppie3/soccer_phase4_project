@@ -8,22 +8,26 @@ function NavBar({ user, setUser }) {
       }
     });
   }
+  
   return (
     <header>
       <div>
         <NavLink to="/">Home</NavLink>
       </div>
-      <div>
         {user ? (
-          <button onClick={handleLogoutClick}>Logout</button>
+          <>
+            <NavLink to="/players">Players</NavLink>
+            <NavLink to="/divisions">Divisions</NavLink>
+            <NavLink to="/teams">Teams</NavLink>
+            <button onClick={handleLogoutClick}>Logout</button>
+          </>
         ) : (
           <>
             <NavLink to="/signup">Signup</NavLink>
             <NavLink to="/login">Login</NavLink>
           </>
         )}
-      </div>
     </header>
-  );
-}
+      );
+    }
 export default NavBar;
