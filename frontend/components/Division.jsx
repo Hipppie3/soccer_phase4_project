@@ -1,4 +1,5 @@
 import React, {useEffect, useState}  from "react";
+import DivisionCard from "./DivisionCard";
 
  
 const Division = () => {
@@ -16,7 +17,12 @@ const Division = () => {
         });
       }, [])
 
-      console.log(division) }
+    
+
+      return ( 
+        <div>
+          <DivisionCard division={division}/>
+        </div>) }
 
 
       export default Division;

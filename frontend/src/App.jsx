@@ -5,7 +5,8 @@ import SignUp from "./SignUp";
 import Login from "./Login";
 import NavBar from "./NavBar";
 import Home from "./Home";
-import Player from "../components/Player";
+import Division from "../components/Division";
+// import Player from "../components/Player";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
         {user ? (
           <Switch>
             <Route path="/">
-              <Player />
+              <Division />
             </Route>
           </Switch>
         ) : (
